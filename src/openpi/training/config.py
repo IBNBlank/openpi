@@ -593,10 +593,10 @@ class TrainConfig:
 # Use `get_config` if you need to get a config by name in your code.
 _CONFIGS = [
     #
-    # Hex ManiSkill Fetch config.
+    # ManiSkill Fetch config.
     #
     TrainConfig(
-        name="pi05_hex",
+        name="pi05_fetch",
         model=pi0_config.Pi0Config(pi05=True),
         data=LeRobotFetchDataConfig(
             repo_id="local/hex_cabinet_open",

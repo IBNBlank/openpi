@@ -47,8 +47,8 @@ def test_fetch_outputs_slice_action_dim() -> None:
     assert outputs["actions"].shape == (50, 13)
 
 
-def test_pi05_hex_config() -> None:
-    train_config = config.get_config("pi05_hex")
+def test_pi05_fetch_config() -> None:
+    train_config = config.get_config("pi05_fetch")
     data_config = train_config.data.create(train_config.assets_dirs, train_config.model)
 
     assert train_config.model.pi05

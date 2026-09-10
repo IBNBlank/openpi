@@ -12,7 +12,7 @@ ACTION_DIM = 13
 
 
 def make_fetch_example() -> dict:
-    """Create an example matching the Hex ManiSkill LeRobot export."""
+    """Create an example matching the ManiSkill Fetch LeRobot export."""
     return {
         "observation/state": np.random.rand(STATE_DIM),
         "observation/image": np.random.randint(256, size=(224, 224, 3), dtype=np.uint8),
